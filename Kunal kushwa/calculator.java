@@ -9,28 +9,30 @@ public class calculator {
         System.out.println("Enter the operator");
         char opr = scan.next().charAt(0);
         float result ;
-        if(opr == '+'){
-            result = num1 + num2;
-            System.out.println("Sum = " + result);
-        }
-        else if(opr == '-'){
-            result = num1 - num2;
-            System.out.println("Sum = " + result);
-        }
-        else if(opr == '*'){
-            result = num1 * num2;
-            System.out.println("Sum = " + result);
-        }
-        else if(opr == '/'){
-            result = num1 / num2;
-            System.out.println("Sum = " + result);
-        }
-        else if(opr == '%'){
-            result = num1 % num2;
-            System.out.println("Sum = " + result);
-        }
-        else{
-            System.out.println("Invalid Operation");
+        switch (opr) {
+            case '+':
+                result = num1 + num2;
+                System.out.println("Sum = " + result);
+                break;
+            case '-':
+                result = num1 - num2;
+                System.out.println("Sum = " + result);
+                break;
+            case '*':
+                result = num1 * num2;
+                System.out.println("Sum = " + result);
+                break;
+            case '/':
+                result = num1 / num2;
+                System.out.println("Sum = " + result);
+                break;
+            case '%':
+                result = num1 % num2;
+                System.out.println("Sum = " + result);
+                break;
+            default:
+                System.out.println("Invalid Operation");
+                break;
         }
     }
 }
