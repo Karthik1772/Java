@@ -1,4 +1,4 @@
-
+//prgm to find odd or even
 import java.util.Scanner;
 
 
