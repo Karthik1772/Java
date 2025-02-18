@@ -10,4 +10,3 @@ public class num_log6 {
         System.out.println(res);
     }
 }
-}
