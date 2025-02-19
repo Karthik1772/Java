@@ -1,35 +1,43 @@
-
 //ip=1234 & 77 op=1277
 import java.util.Scanner;
 
 public class num_log4 {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter the number n");
-        int n = scan.nextInt();
-        System.out.println("Enter the number m");
-        int m = scan.nextInt();
-        int res, ans = 0;
-        if (n > 0 && m > 0) {
-            res = (n / 100) * 100;
-            ans = res + m;
-        } else if (n < 0 && m > 0) {
-            n = -n;
-            res = (n / 100) * 100;
-            ans = res + m;
-            ans = -ans;
-        } else if (n > 0 && m < 0) {
-            res = (n / 100) * 100;
-            m = -m;
-            ans = res + m;
-            ans = -ans;
-        } else if (n < 0 && m < 0) {
-            m = -m;
-            n = -n;
-            res = (n / 100) * 100;
-            ans = res + m;
-            ans = -ans;
+    public static int four(int n, int m) {
+        if (m < 0) {
+        m = -m;
         }
-        System.out.println(ans);
-    }
+    
+        int nSign = 1;
+        if (n < 0) {
+        nSign = -1;
+        n = -n;
+        }
+    
+        int lengthOfM = 0;
+        int tempM = m;
+        while (tempM > 0) {
+        tempM /= 10;
+        lengthOfM++;
+        }
+    
+        if (lengthOfM == 0) lengthOfM = 1;
+    
+        int divisor = 1;
+        for (int i = 0; i < lengthOfM; i++) {
+        divisor *= 10;
+        }
+    
+        int result = n / divisor;
+        result = result * divisor + m;
+    
+        return nSign * result;
+        }
+    
+        public static void main(String[] args) {
+        Scanner scan =new Scanner(System.in);
+        int n = scan.nextInt();
+        int m = scan.nextInt();
+        int result = four(n, m);
+        System.out.println("Output: " + result);
+        }
 }
