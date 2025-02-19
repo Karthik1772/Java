@@ -8,6 +8,9 @@ public class num_Log3 {
         int n = scan.nextInt();
         System.out.println("Enter the number m");
         int m = scan.nextInt();
-        System.out.println("result: "+n + m);
+        int res,ans;
+        res=n*100;
+        ans=res+m;
+        System.out.println(ans);
     }
 }
