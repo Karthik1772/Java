@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class num_log18 {
     public static int reverse(int a) {
         int rev = 0, rem = 0;
-        while (a != 0) {
+        while (a > 0) {
             rem = a % 10;
             a = a / 10;
             rev = rev * 10 + rem;
@@ -19,7 +19,7 @@ public class num_log18 {
         int a = scan.nextInt();
         a = reverse(a);
         boolean first = true;
-        while (a != 0) {
+        while (a > 0) {
             int b = a % 10;
             if (b % 2 == 0) {
                 if (!first) {
