@@ -1,19 +1,21 @@
+
 import java.util.Scanner;
 
-//Write a program to compute 1/n!.
+//code to convert binary to decimal
 public class num_log19 {
-    public static void main(String[] args) {
-        int n;
-        float res, fact = 1;
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("enter the n value: ");
-        n = scanner.nextInt();
-        for (int i = 1; i <= n; i++) {
-            fact = fact * i;
+    static long bd(long n) {
+            long sum = 0, a = 1;
+            while (n > 0) {
+                sum = sum + ((n % 10) * a);
+                a = a * 2;
+                n = n / 10;
         }
-        System.out.printf("%f\n", fact);
-        res = 1 / fact;
-        System.out.printf("%f", res);
-        scanner.close();
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        long n = scan.nextLong();
+        System.out.println(bd(n));
     }
 }

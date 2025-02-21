@@ -1,21 +1,21 @@
 
 import java.util.Scanner;
-
-//code to convert dicimal to binary
+//code for binary to octal
 public class num_log21 {
-    static int convert(int n) {
-        int bin = 0, a = 1;
+    static long bd(long n) {
+        long sum = 0, a = 1;
         while (n > 0) {
-            bin = bin + n % 2 * a;
-            n = n / 2;
-            a = a * 10;
-        }
-        return bin;
+            sum = sum + ((n % 10) * a);
+            a = a * 2;
+            n = n / 10;
     }
-
+    return sum;
+}
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-        System.out.println(convert(n));
+        Scanner scan=new Scanner(System.in);
+        long n =scan.nextLong(),num=n;
+        while(n>0){
+            
+        }
     }
 }
