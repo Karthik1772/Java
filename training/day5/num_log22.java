@@ -17,7 +17,7 @@ public class num_log22 {
         Scanner scan = new Scanner(System.in);
         long num = scan.nextLong(), ans = 0, a = 1;
         while (num > 0) {
-            if(num%10>7){
+            if (num % 10 > 7) {
                 System.out.println("not an octal number");
                 break;
             }
