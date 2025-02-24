@@ -1,20 +1,20 @@
-
+// *********
+// *********
+//  ********
+//   *******
+//    ******
+//     *****
+//      ****
+//       ***
+//        **
 //         *
-//        *
-//       *
-//      *
-//     *
-//    *
-//   *
-//  *
-// *
 import java.util.Scanner;
 
-public class pattern3 {
+public class pattern5 {
     static void pattern(int n) {
         for (int i = 0; i < n; i++) {//row
             for (int j = 0; j < n; j++) {//col
-                if (i + j == n-1)
+                if (i - j <= 0)
                     System.out.print("*");
                 else
                     System.out.print(" ");
