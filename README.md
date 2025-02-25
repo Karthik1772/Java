@@ -3,15 +3,8 @@
 This repository contains various Java programs demonstrating basic concepts, algorithms, and problem-solving techniques. The programs included in this repository range from basic operations to more complex logic and mathematical calculations.
 
 ## Programs Included:
-- **AreaPeri.java** – Calculate the area and perimeter of a shape.
-- **FirstTen.java** – Prints the first 10 numbers.
-- **IO.java** – Demonstrates input and output operations.
-- **InrToUsd.java** – Converts INR to USD.
-- **OddEven.java** – Checks if a number is odd or even.
-- **SimpleIntrest.java** – Calculates simple interest.
-- **calculator.java** – A basic calculator program.
-- **fibonacci.java** – Prints the Fibonacci sequence.
-- **marks.java** – Grade calculation based on marks.
+- **Number Logics** – Solve the programs using pure number logic.
+- **Patterns** – Solve the programs for given patterns.
 
 ## How to Use
 Clone this repository to your local machine:
