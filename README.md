@@ -7,9 +7,10 @@ This repository contains various Java programs demonstrating basic concepts, alg
 - **Patterns** – Solve the programs for given patterns.
 
 ## How to Use
-Clone this repository to your local machine:
 
 - **Note:-** - Make sure that you have installed the required JDK
+
+Clone this repository to your local machine:
 
 ```bash
 git clone https://github.com/Karthik1772/Java.git
