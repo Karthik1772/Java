@@ -1,3 +1,4 @@
+//print a pattern, in place of start use the data inside the array
 public class array10 {
 
     static void array(int arr[]) {
