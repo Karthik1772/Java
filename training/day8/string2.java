@@ -1,4 +1,4 @@
-//to reverse the words of the string 
+//to reverse the words of the strings
 public class string2 {
     static void disp(char a[]) {
         for (int i = 0; i < a.length; i++)

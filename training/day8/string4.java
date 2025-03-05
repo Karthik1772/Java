@@ -1,4 +1,4 @@
-//what is your name
+//What is your name
 //wha4 i2 you4 nam4
 public class string4 {
 

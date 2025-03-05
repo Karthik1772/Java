@@ -1,4 +1,5 @@
-
+// what is your name
+// whEt Os yUAr nEmI
 public class string6 {
 
 	static void disp(char a[]) {

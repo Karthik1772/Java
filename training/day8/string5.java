@@ -1,4 +1,5 @@
-
+// what is your name
+// hwta si oyru anem
 public class string5 {
 
 	static void disp(char a[]) {

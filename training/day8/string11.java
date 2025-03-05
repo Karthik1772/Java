@@ -1,4 +1,5 @@
-
+//what is your name
+// ahtw is oruy aemn
 public class string11 {
 
 	static void disp(char a[]) {

@@ -1,4 +1,4 @@
-// what is your name ==> #ha@ #@ #ou@ #am@
+// what is your name => #ha@ #@ #ou@ #am@
 public class string3 {
     static void disp(char a[]) {
         for (int i = 0; i < a.length; i++)

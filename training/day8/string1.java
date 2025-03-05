@@ -1,4 +1,4 @@
-//print the reverse of a given string
+//print the reverse of a given strings
 public class string1 {
     static void disp(char ch[], int n) {
         for (int i = 0; i < n; i++) {

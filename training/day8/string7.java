@@ -1,4 +1,5 @@
-
+// what is your name
+// vgAu It xOUs mAne
 public class string7 {
 
 	static void disp(char a[]) {
