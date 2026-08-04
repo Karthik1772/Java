@@ -1,7 +1,7 @@
 //max min
 public class array8 {
     static int max(int arr[]) {
-        int max = Integer.MIN_VALUE;
+        int max = Integer.MIN_VALUE; //-2147483648 Smallest int value
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > max) {
                 max = arr[i];
@@ -11,7 +11,7 @@ public class array8 {
     }
 
     static int min(int arr[]) {
-        int min = Integer.MAX_VALUE;
+        int min = Integer.MAX_VALUE; //2147483647 Largest int value
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < min) {
                 min = arr[i];
