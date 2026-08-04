@@ -19,9 +19,9 @@ public class array14 {
         // for (int i = 0; i < n; i++) {
         //     System.out.print(a[i] + " ");
         // }
-        swap(a, n, r);
+        leftswap(a, n, r);
     }
-    static void swap(int a[], int n, int r) {
+    static void leftswap(int a[], int n, int r) {
         int[] new1 = new int[n];
         
         for (int i = r, j = 0; i < n; i++, j++) {

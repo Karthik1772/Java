@@ -1,3 +1,4 @@
+//right rotation
 public class array15 {
     static void rev(int a[], int i, int j) {
         while (i < j) {
@@ -10,13 +11,30 @@ public class array15 {
     public static void main(String[] args) {
         int a[] = { 1, 2, 3, 4, 5, 6 };
         int n = a.length;
-        int r = 7;
-        r = r % n;
-        rev(a, n - r, n - 1);
-        rev(a, 0, n - r - 1);
-        rev(a, 0, n - 1);
-        for (int i = 0; i < n; i++) {
-            System.out.print(a[i] + " ");
+        int r = 2;
+        // r = r % n;
+        // rev(a, n - r, n - 1);
+        // rev(a, 0, n - r - 1);
+        // rev(a, 0, n - 1);
+        // for (int i = 0; i < n; i++) {
+        //     System.out.print(a[i] + " ");
+        // }
+        rightswap(a, n, r);
+    }
+
+    static void rightswap(int a[], int n, int r) {
+        int[] new1 = new int[n];
+        
+        for (int i = n - r, j = 0; i < n; i++, j++) {
+            new1[j] = a[i];
+        }
+
+        for (int i = r, j = 0; i < n; i++, j++) {
+            new1[i] = a[j];
+        }
+
+        for (int x : new1) {
+            System.out.print(x + " ");
         }
     }
 }
