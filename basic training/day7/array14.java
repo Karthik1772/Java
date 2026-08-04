@@ -9,9 +9,9 @@ public class array14 {
     }
 
     public static void main(String[] args) {
-        int a[] = { 1, 2, 3, 4, 5 };
+        int a[] = { 1, 2, 3, 4, 5, 6, 7 };
         int n = a.length;
-        int r = 2;
+        int r = 3;
         // r = r % n;
         // rev(a, 0, r - 1);
         // rev(a, r, n - 1);
